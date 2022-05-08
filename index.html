@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Cat API - API Consumption Course</title>
+</head>
+<body>
+    <main>
+        <div id="top-section">
+            <section id="random-cats-section">
+                <div id="title">
+                    <h1>🎲 Random Cats</h1>
+                    <button onclick="getRandomCats()"><i class="fa fa-refresh"></i></i></button>
+                </div>
+                <div id="cats-images"></div>
+            </section>
+            <section id="upload-cat-section">
+                <h1>📈 Upload Cats</h1>
+
+                <img src="" id="uploading-img">
+                <span id="span-error"></span>
+
+                <form id="upload-form">
+                    <input id="file" name="file" type="file" onchange="chargeThumb()"/>
+                    <button type="button" onclick="uploadCat()">
+                        Upload image
+                    </button>
+                </form>
+            </section>
+        </div>
+        <section id="bottom-section">
+            <h1>⭐ Favourites Cats</h1>
+            <div id="favourites-cats-images"></div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

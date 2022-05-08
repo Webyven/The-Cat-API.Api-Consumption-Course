@@ -1,0 +1,157 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    background: linear-gradient(45deg, #151515, #333);
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    max-width: 90vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section{
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    min-height: 10vh;
+    height: fit-content;
+    text-align: center;
+    box-shadow: 0 0 50px #111;
+}
+
+#upload-cat-section img{
+    display: block;
+    margin: 0 auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 25px;
+    font-size: 1.2rem;
+}
+
+form button{
+    border: 1px solid gainsboro;
+    border-radius: 7px;
+    background-color: transparent;
+    color: gainsboro;
+    font-size: 1.3rem;
+    margin-top: 15px;
+    padding: 10px;
+    cursor:pointer;
+}
+
+form button:hover{
+    background-color: gainsboro;
+    color: #222;
+}
+
+
+
+#top-section{
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: 4fr 1fr;
+    max-height: 50vh;
+}
+
+#cats-images{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+}
+
+#favourites-cats-images{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+img {
+    margin: 15px;
+    margin-left: 15px;
+    max-width: 175px;
+    max-height: 175px;
+    border-radius: 10px;
+    justify-self: center;
+    align-self: center;
+}
+
+#cats-images img{
+    cursor: copy;
+}
+
+#favourites-cats-images img{
+    cursor: not-allowed;
+}
+
+section > h1{
+    display: inline;
+    background-color: aliceblue;
+    padding: 10px 15px;
+    color:#151515;
+    border-radius: 7px;
+    position: relative;
+    top: -15px;
+}
+
+#title{
+    color:#151515;
+    background-color: aliceblue;
+    display: inline-flex;
+    padding: 10px 15px;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    border-radius: 7px;
+    position: relative;
+    top: -25px;
+}
+
+#title h1{
+    display: inline; 
+    margin: 0;   
+}
+
+#title button{
+    margin: 5px;
+    margin-left: 15px;
+    width: 35px;
+    border: 1px solid #555;
+    border-radius: 7px;
+    padding: 7px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+#title button:hover{
+    color: white;
+    background-color: #333;
+}
+
+#bottom-section{
+    margin-top: 50px;
+}
+
+
