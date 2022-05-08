@@ -53,7 +53,6 @@ async function getFavouriteCats(){
     container.innerHTML = "";
 
     if(res.status == 200){
-        console.log(data);
         data.forEach(cat => {
             const img = document.createElement('img');
             img.src = cat.image.url;
